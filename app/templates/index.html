@@ -1,0 +1,23 @@
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<h1>fluentd経由でMongoにログ保存するテスト</h1>
+
+<form action="/" method="post">
+  <div>
+    名前: <input type="text" name="name" placeholder="名前入れてね" value="keisuke">
+  </div>
+
+  <div>
+    年齢: <input type="number" name="age" placeholder="年齢入れてね" value="25">
+  </div>
+
+  <input type="submit" value="送信">
+</form>
+
+<div>名前: {% if name %}{{ name }}{% endif %}</div>
+<div>年齢: {% if age %}{{ age }}{% endif %}</div>
+
+{% endblock %}
